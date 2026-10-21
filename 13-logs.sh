@@ -11,7 +11,7 @@ fi
 
 mkdir -p $logs_folder  # If folder present then it will not create the folder.So we didnt get error
 
-echo "Script started execution at $(date +"%F %T")"
+echo "Script started execution at $(date +"%F %T")" &>> $logs_file
 
 validate(){
     if [ $1 -ne 0 ]; then
@@ -32,4 +32,4 @@ validate $? "Nginx instllation"
 dnf install mysql -y &>> $logs_file
 validate $? "mysql instllation"
 
-echo "Script execution completed at $(date +"%F %T")"
+echo "Script execution completed at $(date +"%F %T")" &>> $logs_file
