@@ -12,11 +12,11 @@ count=count+1
 
 echo "Count is : $count"
 
-fruits=("Apple" "banana "papaya") # This is called as array
+FRUITS=("Apple" "Banana" "Pappaya") # This is called as array
 
-echo "All fruits : ${fruits[@]}"   # @ all 
-echo "first fruit : $first{fruits[0]}"
-echo "second fruit : $first{fruits[1]}"
+echo "All fruits : ${FRUITS[@]}"   # @ all 
+echo "first fruit : ${FRUITS[0]}"
+echo "second fruit : ${FRUITS[1]}"
 
 name="Tharun"
 
